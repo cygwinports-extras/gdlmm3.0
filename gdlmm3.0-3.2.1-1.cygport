@@ -1,0 +1,11 @@
+inherit gtkmm
+
+
+DEPEND="mm-common
+	pkgconfig(gdl-3.0)
+	pkgconfig(gtkmm-3.0)"
+
+PKG_NAMES="libgdlmm3.0_0 libgdlmm3.0-devel"
+libgdlmm3_0_0_CONTENTS="--exclude=gdlmm-3.0 usr/bin/*-3.0-0.dll usr/share/doc/"
+libgdlmm3_0_devel_CONTENTS="usr/include/ usr/lib/ usr/share/devhelp/ usr/share/doc/gdlmm-3.0/"
+
